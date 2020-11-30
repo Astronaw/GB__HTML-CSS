@@ -27,7 +27,7 @@ body {
 .top-content {
     padding-top: 115px;
     flex-grow: 1;
-    background-image: url(img/top_back.png);
+    background-image: url(img/top_back.svg);
     background-repeat: no-repeat;
     background-position: right center;
 }
