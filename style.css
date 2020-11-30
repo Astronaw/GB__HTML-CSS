@@ -8,8 +8,9 @@ body {
 }
 
 .top {
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    display: flex;
 }
 
 .container {
@@ -35,7 +36,7 @@ body {
 .top-box {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    flex-grow: 1;
 }
 
 .text {
@@ -81,6 +82,7 @@ body {
     padding: 15px 50px;
     display: inline-block;
     margin-top: 71px;
+    margin-bottom: 71px;
 }
 
 .product__list {
@@ -321,4 +323,67 @@ body {
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .top-content {
+        background-position: right 180px;
+    }
+
+
+
+}
+
+@media (max-width: 1000px) {
+    .top-content {
+        background-size: 44%;
+        background-position: right 295px;
+    }
+
+}
+
+@media (max-width: 667px) {
+    .top {
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+
+    .heading-top {
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .top-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu {
+        padding-top: 24px;
+    }
+
+    .top-content {
+        padding-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+    }
+
+    .top__button {
+        font-size: 12px;
+        padding: 0 8px;
+        margin-top: 32px;
+        margin-bottom: 0;
+    }
+    
 }
