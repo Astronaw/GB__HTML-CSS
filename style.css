@@ -566,7 +566,7 @@ body {
 
 @media (max-width: 375px) {
     .product__card {
-        width: auto;
+        width: 100%;
     }
 
 }
